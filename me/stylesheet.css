@@ -88,9 +88,7 @@ h3 {
   color: var(--muted);
 }
 
-.bio-table,
-.news-table,
-.service-table {
+.bio-table {
   width: 100%;
   border: 0;
   border-spacing: 0;
@@ -127,25 +125,18 @@ h3 {
   vertical-align: top;
 }
 
-.bio-table a,
-.news-table a,
-.service-table a {
+.bio-table a {
   color: var(--muted);
   border-bottom: 1px dotted #9a9a9a;
 }
 
 .bio-table a:focus,
-.bio-table a:hover,
-.news-table a:focus,
-.news-table a:hover,
-.service-table a:focus,
-.service-table a:hover {
+.bio-table a:hover {
   color: var(--hover);
   border-bottom-color: var(--hover);
 }
 
-.bio-table strong a,
-.service-table strong a {
+.bio-table strong a {
   color: var(--link);
   border-bottom: 0;
 }
@@ -184,6 +175,37 @@ h3 {
   color: #2b3f54;
   font-weight: 700;
   text-align: center;
+}
+
+.intern-entry {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 20px;
+  align-items: center;
+  margin: 0 20px 6px;
+  padding: 14px 0 16px;
+}
+
+.intern-logo-link {
+  display: grid;
+  min-height: 78px;
+  place-items: center;
+  padding: 16px 18px;
+  border: 1px solid #111111;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.18);
+}
+
+.intern-logo {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+.intern-details p {
+  margin: 0;
+  line-height: 1.6;
 }
 
 .paper-entry {
@@ -252,33 +274,8 @@ h3 {
   font-style: italic;
 }
 
-.news-conf {
-  color: var(--date);
-}
-
 .muted-link {
   color: var(--muted);
-}
-
-.compact-list {
-  margin: 0 20px;
-}
-
-.compact-list p {
-  margin: 0 0 8px;
-}
-
-.service-name {
-  width: 0;
-  padding: 0 10px 0 20px;
-  color: var(--date);
-  line-height: 1.5;
-  vertical-align: top;
-  white-space: nowrap;
-}
-
-.contact-line {
-  margin: 0 20px 22px;
 }
 
 footer {
@@ -330,9 +327,7 @@ footer p {
     margin: 22px 20px 8px;
   }
 
-  .bio-table tr,
-  .news-table tr,
-  .service-table tr {
+  .bio-table tr {
     display: grid;
     grid-template-columns: auto 1fr;
     row-gap: 1px;
@@ -340,8 +335,7 @@ footer p {
   }
 
   .date,
-  .year,
-  .service-name {
+  .year {
     width: auto;
     padding: 0 4px 0 20px;
     text-align: left;
@@ -354,6 +348,16 @@ footer p {
   .details {
     grid-column: 1 / -1;
     padding: 0 20px;
+  }
+
+  .intern-entry {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .intern-logo-link {
+    width: 210px;
+    justify-self: start;
   }
 
   .paper-entry {
@@ -380,13 +384,11 @@ footer p {
 @media (max-width: 420px) {
   .date,
   .year,
-  .service-name,
   .details,
   h2,
   h3,
   .section-note,
-  .compact-list,
-  .contact-line,
+  .intern-entry,
   footer {
     margin-left: 0;
     margin-right: 0;
@@ -394,7 +396,6 @@ footer p {
 
   .date,
   .year,
-  .service-name,
   .details {
     padding-left: 16px;
     padding-right: 16px;
@@ -403,8 +404,7 @@ footer p {
   h2,
   h3,
   .section-note,
-  .compact-list,
-  .contact-line,
+  .intern-entry,
   footer {
     margin-left: 16px;
     margin-right: 16px;
