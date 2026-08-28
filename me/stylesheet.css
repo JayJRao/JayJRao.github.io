@@ -252,6 +252,14 @@ h3 {
   font-style: italic;
 }
 
+.news-conf {
+  color: var(--date);
+}
+
+.muted-link {
+  color: var(--muted);
+}
+
 .compact-list {
   margin: 0 20px;
 }
