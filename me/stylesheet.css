@@ -158,23 +158,11 @@ h3 {
   padding: 20px;
 }
 
-.portrait-placeholder {
-  display: grid;
+.portrait-img {
+  display: block;
   width: 100%;
-  min-height: 240px;
-  aspect-ratio: 4 / 5;
-  place-items: center;
-  overflow: hidden;
-  border: 1px solid #111111;
+  height: auto;
   border-radius: 10px;
-  background:
-    linear-gradient(135deg, rgba(23, 114, 208, 0.16), rgba(240, 146, 40, 0.2)),
-    repeating-linear-gradient(45deg, rgba(255,255,255,0.52) 0 10px, rgba(255,255,255,0.16) 10px 20px),
-    var(--soft);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.28);
-  color: #2b3f54;
-  font-weight: 700;
-  text-align: center;
 }
 
 .intern-entry {
@@ -191,9 +179,6 @@ h3 {
   min-height: 78px;
   place-items: center;
   padding: 16px 18px;
-  border: 1px solid #111111;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.18);
 }
 
 .intern-logo {
@@ -224,29 +209,28 @@ h3 {
   aspect-ratio: 16 / 10;
   place-items: center;
   overflow: hidden;
-  border: 1px solid #111111;
   border-radius: 10px;
-  background:
-    linear-gradient(135deg, rgba(23, 114, 208, 0.26), rgba(219, 234, 254, 0.8)),
-    repeating-linear-gradient(45deg, rgba(255,255,255,0.32) 0 12px, rgba(255,255,255,0.08) 12px 24px),
-    var(--paper-a);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.22);
   color: #22384c;
   font-weight: 700;
 }
 
+.paper-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.22);
+}
+
 .paper-visual.alternate {
-  background:
-    linear-gradient(135deg, rgba(240, 146, 40, 0.3), rgba(254, 243, 199, 0.85)),
-    repeating-linear-gradient(45deg, rgba(255,255,255,0.34) 0 12px, rgba(255,255,255,0.1) 12px 24px),
-    var(--paper-b);
+  border-radius: 10px;
+  box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.22);
 }
 
 .paper-visual.muted {
-  background:
-    linear-gradient(135deg, rgba(15, 118, 110, 0.24), rgba(224, 242, 241, 0.9)),
-    repeating-linear-gradient(45deg, rgba(255,255,255,0.36) 0 12px, rgba(255,255,255,0.12) 12px 24px),
-    var(--paper-c);
+  border-radius: 10px;
+  box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.22);
 }
 
 .paper-details {
@@ -315,10 +299,6 @@ footer p {
     padding: 20px 20px 4px;
   }
 
-  .portrait-placeholder {
-    min-height: 0;
-  }
-
   h1 {
     font-size: 30px;
   }
@@ -374,6 +354,10 @@ footer p {
 
   .paper-visual {
     min-height: 155px;
+  }
+
+  .paper-img {
+    max-width: 420px;
   }
 
   footer {
