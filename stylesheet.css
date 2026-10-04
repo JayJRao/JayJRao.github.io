@@ -125,6 +125,11 @@ h3 {
   vertical-align: top;
 }
 
+.research-interests .date,
+.research-interests .details {
+  padding-top: 10px;
+}
+
 .bio-table a {
   color: var(--muted);
   border-bottom: 1px dotted #9a9a9a;
@@ -220,6 +225,25 @@ h3 {
   height: auto;
   border-radius: 6px;
   box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.22);
+}
+
+.streamhoi-crop {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1368 / 427;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.22);
+}
+
+.streamhoi-crop .paper-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: none;
+  border-radius: 0;
+  box-shadow: none;
+  transform: translateY(-57.97%);
 }
 
 .paper-visual.alternate {
