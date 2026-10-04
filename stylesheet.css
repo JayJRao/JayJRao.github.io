@@ -227,25 +227,6 @@ h3 {
   box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.22);
 }
 
-.streamhoi-crop {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1368 / 427;
-  overflow: hidden;
-  border-radius: 6px;
-  box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.22);
-}
-
-.streamhoi-crop .paper-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: none;
-  border-radius: 0;
-  box-shadow: none;
-  transform: translateY(-57.97%);
-}
-
 .paper-visual.alternate {
   border-radius: 10px;
   box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.22);
@@ -279,6 +260,12 @@ h3 {
 
 .venue {
   font-style: italic;
+}
+
+.published-venue {
+  color: #c62828;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .muted-link {
